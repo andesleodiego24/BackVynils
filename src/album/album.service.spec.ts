@@ -1,7 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { AlbumDTO } from './album.dto';
 import { Album } from './album.entity';
 import { AlbumService } from './album.service';
 
