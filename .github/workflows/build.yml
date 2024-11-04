@@ -16,6 +16,9 @@ jobs:
       - name: Instalación de librerías y dependencias
         run: |
           npm install
+      - name: Pruebas
+        run: |
+          jest --coverage
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
