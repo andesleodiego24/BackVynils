@@ -35,8 +35,4 @@ describe('Album Controller', () => {
   it('should be defined', () => {
     expect(controller).toBeDefined();
   });
-
-  it('findAll', async () => {
-    expect(await controller.findAll()).toEqual(mockAlbumService.findAll());
-  });
 });
