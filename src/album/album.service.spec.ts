@@ -19,7 +19,6 @@ describe('AlbumService', () => {
     }).compile();
 
     service = module.get<AlbumService>(AlbumService);
-    repositoryMock = module.get(getRepositoryToken(Album));
   });
 
   it('should be defined', () => {
