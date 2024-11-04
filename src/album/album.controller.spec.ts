@@ -30,7 +30,6 @@ describe('Album Controller', () => {
     }).compile();
 
     controller = module.get<AlbumController>(AlbumController);
-    service = module.get<AlbumService>(AlbumService);
   });
 
   it('should be defined', () => {
