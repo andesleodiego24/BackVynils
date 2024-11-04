@@ -48,8 +48,6 @@ export class CollectorPerformerService {
         if (!performer)
             throw new BusinessLogicException("The performer with the given id was not found", BusinessError.NOT_FOUND)
 
-        collector.favoritePerformers.filter(e => e.id !== performerId)
-
         return await this.collectorRepository.save(collector);
     }
 
