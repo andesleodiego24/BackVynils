@@ -1,7 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { AlbumDTO } from './album.dto';
 import { Album } from './album.entity';
 import { AlbumService } from './album.service';
 
@@ -20,7 +19,6 @@ describe('AlbumService', () => {
     }).compile();
 
     service = module.get<AlbumService>(AlbumService);
-    repositoryMock = module.get(getRepositoryToken(Album));
   });
 
   it('should be defined', () => {
