@@ -4,7 +4,7 @@ delete from public.performer_collectors_collector;
 delete from public.performer_prize;
 delete from public.performer;
 delete from public.comment;
-delete from track;
+delete from public.track;
 delete from public.album;
 delete from public.collector;
 delete from public.prize;
